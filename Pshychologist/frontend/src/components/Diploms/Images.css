@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+  }
+   
+  .singleImage {
+    margin-top: 20px;
+    margin-left: 20px;
+    max-height: 300px;
+    border-radius: 34;
+    position: relative;
+    background: linear-gradient(to right, red, purple);
+    padding: 5px;
+  }
+   
+  .singleImage:hover {
+    padding: 5px;
+    /* opacity: .5; */
+    transition: 0.9s;
+    transform: scale(
+      1.5
+    ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    z-index: 1;
+  }
+   
+  .popupParent {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    padding-bottom: 50px;
+    overflow: auto;
+  }
+   
+  .popupImage {
+
+    height: 100vh;
+    margin: auto;
+    z-index: 1;
+    overflow: auto;
+    cursor: pointer;
+  }
+   
+  .imageClosingButton {
+    position: relative;
+  }
+   
+  
